@@ -5,62 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bangkok 18–22 nov • Guía rápida</title>
   <style>
-    :root{
-      --bg:#0f172a; /* slate-900 */
-      --panel:#111827; /* gray-900 */
-      --muted:#94a3b8; /* slate-400 */
-      --text:#f8fafc; /* slate-50 */
-      --brand:#38bdf8; /* sky-400 */
-      --brand2:#22c55e; /* green-500 */
-      --warn:#f59e0b; /* amber-500 */
-      --accent:#a78bfa; /* violet-400 */
-      --card:#0b1220; /* custom */
-      --chip:#1e293b; /* slate-800 */
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0b1020,#0f172a);color:var(--text)}
-    header{position:sticky;top:0;z-index:50;background:#0b1020d9;backdrop-filter:blur(6px);border-bottom:1px solid #1f2937}
+    body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:#0f172a;color:#f8fafc}
+    header{position:sticky;top:0;background:#0b1020d9;backdrop-filter:blur(6px);border-bottom:1px solid #1f2937;z-index:10}
     .wrap{max-width:1100px;margin:0 auto;padding:16px}
-    .brand{display:flex;align-items:center;gap:10px}
-    .brand .dot{width:10px;height:10px;border-radius:50%;background:var(--brand)}
+    h1{margin:0;font-size:24px}
     nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    nav button{background:var(--chip);border:1px solid #334155;color:var(--text);padding:10px 14px;border-radius:999px;cursor:pointer;font-weight:600}
-    nav button.active{background:var(--brand);color:#031525;border-color:transparent}
+    nav button{background:#1e293b;border:1px solid #334155;color:#f8fafc;padding:8px 14px;border-radius:999px;cursor:pointer;font-weight:600}
+    nav button.active{background:#38bdf8;color:#031525;border-color:transparent}
     main{max-width:1100px;margin:24px auto;padding:0 16px}
-    section{display:none;animation:fade .2s ease}
-    section.active{display:block}
+    section{display:none}
+    section.active{display:block;animation:fade .2s ease}
     @keyframes fade{from{opacity:.6;transform:translateY(2px)}to{opacity:1;transform:none}}
-    h1{font-size:28px;margin:0}
-    h2{font-size:22px;margin:22px 0 10px}
-    h3{font-size:18px;margin:18px 0 8px}
-    p,li{color:#dde3ee}
-    .grid{display:grid;gap:16px}
-    .cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
-    .card{background:var(--card);border:1px solid #1f2937;border-radius:16px;padding:16px}
-    .muted{color:var(--muted)}
-    .badge{display:inline-block;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:700;margin-right:6px}
-    .b-a{background:#0ea5e980;color:#05263a;border:1px solid #0284c7}
-    .b-b{background:#22c55e80;color:#05311b;border:1px solid #16a34a}
-    .b-all{background:#a78bfa66;color:#0a0b2e;border:1px solid #7c3aed}
-    .list-clean{list-style:none;padding:0;margin:0}
-    .list-clean li{padding:10px 0;border-bottom:1px dashed #233045}
-    .table{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid #1f2937;border-radius:14px;overflow:hidden}
-    .table th,.table td{padding:12px 14px;border-bottom:1px solid #1f2937}
-    .table th{background:#0c1426;text-align:left;color:#cbd5e1}
-    .kbd{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;background:#0b1324;border:1px solid #1f2937;border-radius:6px;padding:2px 6px}
-    .note{background:#0f1a2d;border-left:4px solid var(--brand);padding:10px 12px;border-radius:10px}
-    .download a{color:#67e8f9;text-decoration:none}
-    iframe{width:100%;min-height:520px;border:1px solid #1f2937;border-radius:12px}
-    @media (max-width:880px){.cols-2{grid-template-columns:1fr}}
+    .card{background:#0b1220;border:1px solid #1f2937;border-radius:12px;padding:16px;margin-bottom:16px}
+    ul{padding-left:20px}
+    iframe{width:100%;height:85vh;border:0}
   </style>
 </head>
 <body>
   <header>
     <div class="wrap">
-      <div class="brand">
-        <span class="dot"></span>
-        <h1>Bangkok 18–22 nov • Guía del viaje</h1>
-      </div>
+      <h1>Bangkok 18–22 nov • Guía del viaje</h1>
       <nav id="tabs">
         <button data-tab="home" class="active">Inicio</button>
         <button data-tab="itinerario-a">Itinerario “a tope”</button>
@@ -68,172 +32,150 @@
         <button data-tab="alojamiento">Zonas para alojarse</button>
         <button data-tab="ver">Qué ver</button>
         <button data-tab="comparativa">Comparativa hoteles</button>
-        <button data-tab="mapa">Mapa & descargas</button>
+        <button data-tab="mini">Mini‑guía</button>
+        <button data-tab="mapa">Mapa interactivo</button>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- INICIO -->
     <section id="home" class="active">
-      <div class="grid cols-2">
-        <div class="card">
-          <h2>Fechas del viaje</h2>
-          <ul class="list-clean">
-            <li><strong>Llegada</strong>: Mar 18 nov, 19:25 a <em>BKK • Suvarnabhumi</em></li>
-            <li><strong>Salida</strong>: Sáb 22 nov, 12:10 desde <em>DMK • Don Mueang</em></li>
-            <li><span class="badge b-all">UTC+7 • ICT</span> <span class="muted">No hay horario de verano</span></li>
-          </ul>
-        </div>
-        <div class="card">
-          <h2>Datos prácticos</h2>
-          <ul>
-            <li><strong>Moneda</strong>: THB (baht).</li>
-            <li><strong>Clima</strong>: tropical; nov–feb más fresco (24–32 °C).</li>
-            <li><strong>Idioma</strong>: tailandés (inglés básico en turismo).</li>
-            <li><strong>Electricidad</strong>: 220V, enchufes A/B/C.</li>
-          </ul>
-          <div class="note"><strong>Transporte clave:</strong> <u>BTS</u> (tren elevado), <u>MRT</u> (metro), <u>ARL</u> (BKK↔centro), <u>SRT Red</u> (DMK↔Bang Sue), barcos por el Chao Phraya.</div>
-        </div>
+      <div class="card">
+        <h2>Fechas del viaje</h2>
+        <p>Llegada: 18 nov (BKK) • Salida: 22 nov (DMK)</p>
       </div>
-
-      <div class="grid cols-2" style="margin-top:16px">
-        <div class="card">
-          <h2>Consejos básicos</h2>
-          <ul>
-            <li>Templos: hombros y rodillas cubiertos; descalzarse al entrar.</li>
-            <li>Agua embotellada; cajeros cobran ~220 THB a extranjeras.</li>
-            <li>Taxi con <em>taxímetro</em> o usa Grab; evita “tours” de tuk‑tuk baratísimos.</li>
-            <li>Madruga para Gran Palacio / Wat Pho / Wat Arun.</li>
-            <li>Frases útiles: <span class="kbd">mai phet</span> (no picante), <span class="kbd">khop khun</span> (gracias).</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h2>Qué te espera</h2>
-          <p>Casco histórico vibrante (Gran Palacio, Wat Pho, Wat Arun), ciudad moderna (Sukhumvit, Siam) y vida nocturna (Chinatown, mercados, rooftops). Combina cultura, barco por el río y relax/spa.</p>
-        </div>
+      <div class="card">
+        <h2>Consejos básicos</h2>
+        <ul>
+          <li>Templos: hombros y rodillas cubiertos; descalzarse al entrar.</li>
+          <li>Agua embotellada siempre; evita tours “baratísimos” de tuk‑tuk.</li>
+          <li>Taxi con taxímetro o Grab; BTS/MRT para evitar atascos.</li>
+          <li>Madruga para Gran Palacio, Wat Pho y Wat Arun.</li>
+        </ul>
       </div>
     </section>
 
-    <!-- ITINERARIO A -->
     <section id="itinerario-a">
       <div class="card">
-        <h2>Itinerario A • Aprovechar al máximo</h2>
+        <h2>Itinerario A • A tope</h2>
         <ol>
-          <li><strong>Mar 18</strong> — Llegada BKK → hotel (ARL a Phaya Thai o taxi). Cena ligera + masaje.</li>
-          <li><strong>Mié 19</strong> — <span class="badge b-a">A</span> Gran Palacio → Wat Pho → Wat Arun (barco) → ICONSIAM (show de fuentes).</li>
-          <li><strong>Jue 20</strong> — <span class="badge b-a">A</span> Jim Thompson House → Siam/MBK → Spa → Chinatown (street food).</li>
-          <li><strong>Vie 21</strong> — <span class="badge b-a">A</span> Klong tour en longtail → Mercado Wang Lang → Rooftop al atardecer → Asiatique/ICONSIAM.</li>
-          <li><strong>Sáb 22</strong> — Traslado a DMK con margen (SRT Red vía Bang Sue o taxi).</li>
+          <li>18 nov — Llegada y masaje ligero.</li>
+          <li>19 nov — Gran Palacio, Wat Pho, Wat Arun; noche en ICONSIAM.</li>
+          <li>20 nov — Jim Thompson House, Siam/MBK, Chinatown nocturno.</li>
+          <li>21 nov — Tour klongs, Wang Lang, rooftop al atardecer.</li>
+          <li>22 nov — Traslado a DMK.</li>
         </ol>
       </div>
     </section>
 
-    <!-- ITINERARIO B -->
     <section id="itinerario-b">
       <div class="card">
-        <h2>Itinerario B • Mitad turismo / mitad relax</h2>
+        <h2>Itinerario B • Relax</h2>
         <ol>
-          <li><strong>Mar 18</strong> — Llegada, check‑in, cena cerca y masaje.</li>
-          <li><strong>Mié 19</strong> — <span class="badge b-b">B</span> Gran Palacio + Wat Pho por la mañana; tarde de piscina/spa; noche en ICONSIAM.</li>
-          <li><strong>Jue 20</strong> — <span class="badge b-b">B</span> Jim Thompson House; tarde en centros comerciales o parque Benjakitti; noche en Chinatown.</li>
-          <li><strong>Vie 21</strong> — <span class="badge b-b">B</span> Día libre (spa/compras); atardecer en Wat Arun + cena junto al río.</li>
-          <li><strong>Sáb 22</strong> — Salida a DMK con tiempo.</li>
+          <li>18 nov — Llegada tranquila, masaje.</li>
+          <li>19 nov — Gran Palacio y Wat Pho, tarde de spa, noche ICONSIAM.</li>
+          <li>20 nov — Jim Thompson House y compras, Chinatown.</li>
+          <li>21 nov — Día libre, atardecer en Wat Arun + cena río.</li>
+          <li>22 nov — Traslado a DMK.</li>
         </ol>
       </div>
     </section>
 
-    <!-- ZONAS ALOJAMIENTO -->
     <section id="alojamiento">
-      <div class="grid cols-2">
-        <div class="card">
-          <h2>Zonas recomendadas</h2>
-          <ul>
-            <li><strong>Riverside / Saphan Taksin</strong> — Perfecto para templos por barco, paseos nocturnos tranquilos.</li>
-            <li><strong>Sukhumvit (Asok–Phrom Phong)</strong> — Conexión BTS+MRT, restaurantes, spas, vida moderna.</li>
-            <li><strong>Chinatown (Yaowarat)</strong> — Street food top y ambiente de noche; buen acceso MRT.</li>
-            <li><strong>Old City (Khao San / Rattanakosin)</strong> — A pie a Gran Palacio y Wat Pho; más turístico.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h2>Tus hoteles ubicados</h2>
-          <ul class="list-clean">
-            <li><strong>MANGO Lagoon Place</strong> — Old City / Khao San (muy cerca de templos).</li>
-            <li><strong>Cassia Rama 9</strong> — Rama 9 / Huai Khwang (más moderno, depende de MRT/taxi para templos).</li>
-          </ul>
-        </div>
+      <div class="card">
+        <h2>Zonas recomendadas</h2>
+        <ul>
+          <li>Riverside — acceso fácil a templos en barco.</li>
+          <li>Sukhumvit — vida moderna y conexión BTS/MRT.</li>
+          <li>Chinatown — street food y ambiente nocturno.</li>
+          <li>Old City — templos a pie, Khao San.</li>
+        </ul>
+        <h3>Tus hoteles</h3>
+        <ul>
+          <li>MANGO Lagoon Place — Old City.</li>
+          <li>Cassia Rama 9 — Rama 9.</li>
+        </ul>
       </div>
     </section>
 
-    <!-- QUÉ VER -->
     <section id="ver">
-      <div class="grid cols-2">
-        <div class="card">
-          <h2>Imprescindibles históricos</h2>
-          <ul class="list-clean">
-            <li><span class="badge b-all">A y B</span> <strong>Gran Palacio</strong> — Palacio real e imprescindible Buda Esmeralda.</li>
-            <li><span class="badge b-all">A y B</span> <strong>Wat Pho</strong> — Buda Reclinado y escuela de masaje tradicional.</li>
-            <li><span class="badge b-a">A</span><span class="badge b-b">B</span> <strong>Wat Arun</strong> — Prang cerámico, precioso al atardecer.</li>
-          </ul>
-          <h3>Río y mercados</h3>
-          <ul class="list-clean">
-            <li><span class="badge b-a">A</span> <strong>Tour klongs (canales)</strong> — Vida local en barca tradicional.</li>
-            <li><span class="badge b-all">A y B</span> <strong>ICONSIAM</strong> — Centro junto al río con show de fuentes nocturno.</li>
-            <li><span class="badge b-a">A</span> <strong>Wang Lang Market</strong> — Mercado local frente a Thammasat.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h2>Ciudad moderna & cultura</h2>
-          <ul class="list-clean">
-            <li><span class="badge b-all">A y B</span> <strong>Jim Thompson House</strong> — Arquitectura thai y museo de la seda.</li>
-            <li><span class="badge b-a">A</span> <strong>Siam/MBK</strong> — Compras y comida; fácil combinación con museos.</li>
-            <li><span class="badge b-all">A y B</span> <strong>Chinatown (Yaowarat)</strong> — Street food nocturno.</li>
-            <li><span class="badge b-a">A</span> <strong>Rooftop</strong> — Vistas al atardecer (Lebua, Moon Bar, Octave...).</li>
-          </ul>
-        </div>
+      <div class="card">
+        <h2>Qué ver</h2>
+        <ul>
+          <li>Gran Palacio — con Buda Esmeralda.</li>
+          <li>Wat Pho — Buda Reclinado.</li>
+          <li>Wat Arun — templo del amanecer.</li>
+          <li>Jim Thompson House — arquitectura tradicional.</li>
+          <li>Chinatown — gastronomía nocturna.</li>
+        </ul>
       </div>
     </section>
 
-    <!-- COMPARATIVA HOTELES -->
     <section id="comparativa">
       <div class="card">
-        <h2>MANGO Lagoon Place vs Cassia Rama 9</h2>
-        <table class="table">
-          <thead>
-            <tr><th>Aspecto</th><th>MANGO Lagoon Place (Old City)</th><th>Cassia Rama 9 (Rama 9 / Huai Khwang)</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Acceso a templos</td><td>A pie (Gran Palacio/Wat Pho muy cerca)</td><td>40–50 min en MRT/taxi</td></tr>
-            <tr><td>Ambiente</td><td>Turístico y animado (Rambuttri/Khao San)</td><td>Moderno y local, centros comerciales</td></tr>
-            <tr><td>Transporte</td><td>Barco/taxi; MRT no tan cerca</td><td>MRT cercano; BTS con transbordo</td></tr>
-            <tr><td>Ideal si...</td><td>Quieres exprimir templos e historia</td><td>Prefieres tranquilidad y zonas modernas</td></tr>
-          </tbody>
+        <h2>Comparativa hoteles</h2>
+        <table style="width:100%;border-collapse:collapse">
+          <tr><th></th><th>MANGO Lagoon Place</th><th>Cassia Rama 9</th></tr>
+          <tr><td>Templos</td><td>A pie (Gran Palacio/Wat Pho)</td><td>40–50 min transporte</td></tr>
+          <tr><td>Ambiente</td><td>Turístico/animado</td><td>Moderno/local</td></tr>
+          <tr><td>Ideal</td><td>Exprimir historia</td><td>Tranquilidad y modernidad</td></tr>
         </table>
-        <p class="note">Para tus fechas y planes de templos, <strong>MANGO Lagoon Place</strong> es más práctico.</p>
+      </div>
+    </section>
+    <section id="mini">
+      <div class="card">
+        <h2>Mini‑guía de supervivencia</h2>
+        <h3>Cómo moverte</h3>
+        <ul>
+          <li><strong>BTS (Skytrain)</strong> y <strong>MRT (metro)</strong>: la forma más rápida de evitar atascos.</li>
+          <li><strong>Airport Rail Link (ARL)</strong>: BKK ↔ Phaya Thai (~30–35 min).</li>
+          <li><strong>SRT Red Line</strong>: DMK ↔ Bang Sue; conecta con MRT.</li>
+          <li><strong>Barcos Chao Phraya</strong>: ideales para templos y el río.</li>
+          <li><strong>Taxi/Grab</strong>: económicos; pide taxímetro o usa app.</li>
+          <li><strong>Tuk‑tuk</strong>: trayectos cortos; pacta precio antes.</li>
+        </ul>
+        <h3>Dinero y pagos</h3>
+        <ul>
+          <li>Moneda: THB. Cajeros con comisión fija (~220 THB) a extranjeras.</li>
+          <li>Tarjeta: común en hoteles/centros comerciales; mercados → efectivo.</li>
+          <li>Cambio: mejor en casas de cambio del centro que en aeropuertos.</li>
+        </ul>
+        <h3>Comer y beber</h3>
+        <ul>
+          <li>Street food seguro si hay rotación; agua siempre embotellada.</li>
+          <li>Picante: <em>mai phet</em> (no picante) / <em>phet nit noi</em> (poco).</li>
+          <li>Propina: no obligatoria; redondear o 20–50 THB en mesa.</li>
+        </ul>
+        <h3>Cultura y costumbres</h3>
+        <ul>
+          <li>Templos: hombros/rodillas cubiertos; descalzarse al entrar.</li>
+          <li>No apuntar los pies a imágenes de Buda ni a monjes.</li>
+          <li>Respeto absoluto a la familia real (también en billetes).</li>
+        </ul>
+        <h3>Tecnología y conectividad</h3>
+        <ul>
+          <li>SIM local barata (AIS/DTAC/TrueMove) con muchos GB.</li>
+          <li>Apps: Grab, Google Maps, LINE, Bolt.</li>
+          <li>Wifi muy extendida en hoteles y cafés.</li>
+        </ul>
+        <h3>Qué evitar</h3>
+        <ul>
+          <li>“El Gran Palacio está cerrado hoy” → suele ser un timo.</li>
+          <li>Tours de tuk‑tuk excesivamente baratos → paradas en tiendas.</li>
+          <li>Horas punta (7–9h y 16–19h) si vas en coche/taxi.</li>
+        </ul>
+        <h3>Trucos útiles</h3>
+        <ul>
+          <li>Madruga para templos; mejor luz y menos calor.</li>
+          <li>Lleva pañuelo ligero para templos/sol.</li>
+          <li>Masaje tailandés: 250–400 THB/h en zonas locales.</li>
+          <li>Mercado de flores Pak Khlong Talat: 24h, top de madrugada.</li>
+        </ul>
       </div>
     </section>
 
-    <!-- MAPA & DESCARGAS -->
     <section id="mapa">
-      <div class="grid cols-2">
-        <div class="card download">
-          <h2>Descargas (overlays para Google Maps / Earth)</h2>
-          <ul>
-            <li><a href="sandbox:/mnt/data/bangkok_rutas.kml">Rutas + puntos clave (KML)</a></li>
-            <li><a href="sandbox:/mnt/data/bangkok_noche.kml">Vida nocturna y mercados (KML)</a></li>
-            <li><a href="sandbox:/mnt/data/bangkok_alojamiento_hoteles.kml">Zonas + tus hoteles (KML)</a></li>
-            <li><a href="sandbox:/mnt/data/bangkok_mapa_interactivo.html">Mapa interactivo (HTML)</a></li>
-          </ul>
-          <p class="muted">En Google Maps: <em>Tus sitios → Mapas → Crear mapa → Importar</em>.</p>
-        </div>
-        <div class="card">
-          <h2>Mapa interactivo (vista rápida)</h2>
-          <p class="muted">Si no carga, descarga el archivo HTML y ábrelo en tu navegador.</p>
-          <!-- Si descargas esta página y el mapa HTML en la misma carpeta,
-               puedes reemplazar el src por el nombre local del archivo. -->
-          <iframe src="bangkok_mapa_interactivo.html" title="Mapa interactivo"></iframe>
-        </div>
-      </div>
+      <iframe src="bangkok_mapa_interactivo.html" title="Mapa interactivo"></iframe>
     </section>
   </main>
 
