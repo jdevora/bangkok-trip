@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_59e606cf0ca1ceeb7c441c11e9345489 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_59e606cf0ca1ceeb7c441c11e9345489" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_59e606cf0ca1ceeb7c441c11e9345489 = L.map(
+                "map_59e606cf0ca1ceeb7c441c11e9345489",
+                {
+                    center: [13.75, 100.52],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_59e606cf0ca1ceeb7c441c11e9345489);
+
+            
+
+        
+    
+            var tile_layer_3a0892917afee9a3a1b08cff1224bf3e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_59e606cf0ca1ceeb7c441c11e9345489);
+        
+    
+            var feature_group_a97132447b2bf675472ecec6a210e18f = L.featureGroup(
+                {}
+            ).addTo(map_59e606cf0ca1ceeb7c441c11e9345489);
+        
+    
+            var marker_2ed81e55067226d6d6ad53eba477b646 = L.marker(
+                [13.6923, 100.7507],
+                {}
+            ).addTo(feature_group_a97132447b2bf675472ecec6a210e18f);
+        
+    
+        var popup_ed5a32b6f25475823530a1d12e917df4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb8ef8ebaeaeaafb43dbfb69f33101f6 = $(`<div id="html_cb8ef8ebaeaeaafb43dbfb69f33101f6" style="width: 100.0%; height: 100.0%;">Suvarnabhumi (BKK)</div>`)[0];
+            popup_ed5a32b6f25475823530a1d12e917df4.setContent(html_cb8ef8ebaeaeaafb43dbfb69f33101f6);
+        
+
+        marker_2ed81e55067226d6d6ad53eba477b646.bindPopup(popup_ed5a32b6f25475823530a1d12e917df4)
+        ;
+
+        
+    
+    
+            marker_2ed81e55067226d6d6ad53eba477b646.bindTooltip(
+                `<div>
+                     Suvarnabhumi (BKK)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13e8dcad44df95febaa418821d42f202 = L.marker(
+                [13.9126, 100.607],
+                {}
+            ).addTo(feature_group_a97132447b2bf675472ecec6a210e18f);
+        
+    
+        var popup_b18b0669221a29b66525eb017e66e9e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef7b6ee7ee52b6f762699d9bf7af576b = $(`<div id="html_ef7b6ee7ee52b6f762699d9bf7af576b" style="width: 100.0%; height: 100.0%;">Don Mueang (DMK)</div>`)[0];
+            popup_b18b0669221a29b66525eb017e66e9e3.setContent(html_ef7b6ee7ee52b6f762699d9bf7af576b);
+        
+
+        marker_13e8dcad44df95febaa418821d42f202.bindPopup(popup_b18b0669221a29b66525eb017e66e9e3)
+        ;
+
+        
+    
+    
+            marker_13e8dcad44df95febaa418821d42f202.bindTooltip(
+                `<div>
+                     Don Mueang (DMK)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_025608dac244f6067966b51653501092 = L.marker(
+                [13.7503, 100.4912],
+                {}
+            ).addTo(feature_group_a97132447b2bf675472ecec6a210e18f);
+        
+    
+        var popup_aa6df5860c67b2bf428fe0d3d8b41821 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed8b8131371880b3bc94f477ca8a9250 = $(`<div id="html_ed8b8131371880b3bc94f477ca8a9250" style="width: 100.0%; height: 100.0%;">Grand Palace</div>`)[0];
+            popup_aa6df5860c67b2bf428fe0d3d8b41821.setContent(html_ed8b8131371880b3bc94f477ca8a9250);
+        
+
+        marker_025608dac244f6067966b51653501092.bindPopup(popup_aa6df5860c67b2bf428fe0d3d8b41821)
+        ;
+
+        
+    
+    
+            marker_025608dac244f6067966b51653501092.bindTooltip(
+                `<div>
+                     Grand Palace
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95d35a56b72c2735a35f75b37fa951a4 = L.marker(
+                [13.7469, 100.4935],
+                {}
+            ).addTo(feature_group_a97132447b2bf675472ecec6a210e18f);
+        
+    
+        var popup_a64af1906900010b887493511156e7de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5145f4175efcf3c6b7a5ddbe4c4c3b82 = $(`<div id="html_5145f4175efcf3c6b7a5ddbe4c4c3b82" style="width: 100.0%; height: 100.0%;">Wat Pho</div>`)[0];
+            popup_a64af1906900010b887493511156e7de.setContent(html_5145f4175efcf3c6b7a5ddbe4c4c3b82);
+        
+
+        marker_95d35a56b72c2735a35f75b37fa951a4.bindPopup(popup_a64af1906900010b887493511156e7de)
+        ;
+
+        
+    
+    
+            marker_95d35a56b72c2735a35f75b37fa951a4.bindTooltip(
+                `<div>
+                     Wat Pho
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6cd9c2917c14619b0df5127ef45cac44 = L.marker(
+                [13.7439, 100.4885],
+                {}
+            ).addTo(feature_group_a97132447b2bf675472ecec6a210e18f);
+        
+    
+        var popup_3e3b24a3b5fcde9a666e01b7415d19a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f4ca9d44121fd779c3e0774aa2afa655 = $(`<div id="html_f4ca9d44121fd779c3e0774aa2afa655" style="width: 100.0%; height: 100.0%;">Wat Arun</div>`)[0];
+            popup_3e3b24a3b5fcde9a666e01b7415d19a8.setContent(html_f4ca9d44121fd779c3e0774aa2afa655);
+        
+
+        marker_6cd9c2917c14619b0df5127ef45cac44.bindPopup(popup_3e3b24a3b5fcde9a666e01b7415d19a8)
+        ;
+
+        
+    
+    
+            marker_6cd9c2917c14619b0df5127ef45cac44.bindTooltip(
+                `<div>
+                     Wat Arun
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac60252ddce30b1bab4c02a3c57c7f57 = L.marker(
+                [13.7492, 100.5283],
+                {}
+            ).addTo(feature_group_a97132447b2bf675472ecec6a210e18f);
+        
+    
+        var popup_5f93f0a8ebc4660e49c5af4cf2a732db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62647b7fefc1581e5a98dd681f95e7c6 = $(`<div id="html_62647b7fefc1581e5a98dd681f95e7c6" style="width: 100.0%; height: 100.0%;">Jim Thompson House</div>`)[0];
+            popup_5f93f0a8ebc4660e49c5af4cf2a732db.setContent(html_62647b7fefc1581e5a98dd681f95e7c6);
+        
+
+        marker_ac60252ddce30b1bab4c02a3c57c7f57.bindPopup(popup_5f93f0a8ebc4660e49c5af4cf2a732db)
+        ;
+
+        
+    
+    
+            marker_ac60252ddce30b1bab4c02a3c57c7f57.bindTooltip(
+                `<div>
+                     Jim Thompson House
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_335bd6567ed3dd277c5bbb76e901a4d7 = L.marker(
+                [13.7267, 100.5105],
+                {}
+            ).addTo(feature_group_a97132447b2bf675472ecec6a210e18f);
+        
+    
+        var popup_73dcf4e83573aa89d3e93b51f81b529b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_172b0ca8acae28849669d177d11b84cf = $(`<div id="html_172b0ca8acae28849669d177d11b84cf" style="width: 100.0%; height: 100.0%;">ICONSIAM</div>`)[0];
+            popup_73dcf4e83573aa89d3e93b51f81b529b.setContent(html_172b0ca8acae28849669d177d11b84cf);
+        
+
+        marker_335bd6567ed3dd277c5bbb76e901a4d7.bindPopup(popup_73dcf4e83573aa89d3e93b51f81b529b)
+        ;
+
+        
+    
+    
+            marker_335bd6567ed3dd277c5bbb76e901a4d7.bindTooltip(
+                `<div>
+                     ICONSIAM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_abd8104b438d46f3678f0ac91cc8ec4c = L.marker(
+                [13.7395, 100.51],
+                {}
+            ).addTo(feature_group_a97132447b2bf675472ecec6a210e18f);
+        
+    
+        var popup_901200d3684154c882c6598967835dc1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3df72a554d58f072043565871aa6f440 = $(`<div id="html_3df72a554d58f072043565871aa6f440" style="width: 100.0%; height: 100.0%;">Yaowarat (Chinatown)</div>`)[0];
+            popup_901200d3684154c882c6598967835dc1.setContent(html_3df72a554d58f072043565871aa6f440);
+        
+
+        marker_abd8104b438d46f3678f0ac91cc8ec4c.bindPopup(popup_901200d3684154c882c6598967835dc1)
+        ;
+
+        
+    
+    
+            marker_abd8104b438d46f3678f0ac91cc8ec4c.bindTooltip(
+                `<div>
+                     Yaowarat (Chinatown)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d24e3d333d59d2560a09de2a738687a = L.marker(
+                [13.7356, 100.5562],
+                {}
+            ).addTo(feature_group_a97132447b2bf675472ecec6a210e18f);
+        
+    
+        var popup_6a83ac4a52dea8b9eb3c622211d1b69e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_432c07d5d49a0209a1691ed0ab6eed86 = $(`<div id="html_432c07d5d49a0209a1691ed0ab6eed86" style="width: 100.0%; height: 100.0%;">Asok (Sukhumvit hub)</div>`)[0];
+            popup_6a83ac4a52dea8b9eb3c622211d1b69e.setContent(html_432c07d5d49a0209a1691ed0ab6eed86);
+        
+
+        marker_9d24e3d333d59d2560a09de2a738687a.bindPopup(popup_6a83ac4a52dea8b9eb3c622211d1b69e)
+        ;
+
+        
+    
+    
+            marker_9d24e3d333d59d2560a09de2a738687a.bindTooltip(
+                `<div>
+                     Asok (Sukhumvit hub)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9311351938330ee4238828c293dc6ffa = L.marker(
+                [13.7189, 100.5169],
+                {}
+            ).addTo(feature_group_a97132447b2bf675472ecec6a210e18f);
+        
+    
+        var popup_770513f67838e275867edd0a177170be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b99206259e9e3accdce9c57c189fa8c3 = $(`<div id="html_b99206259e9e3accdce9c57c189fa8c3" style="width: 100.0%; height: 100.0%;">Saphan Taksin (Riverside hub)</div>`)[0];
+            popup_770513f67838e275867edd0a177170be.setContent(html_b99206259e9e3accdce9c57c189fa8c3);
+        
+
+        marker_9311351938330ee4238828c293dc6ffa.bindPopup(popup_770513f67838e275867edd0a177170be)
+        ;
+
+        
+    
+    
+            marker_9311351938330ee4238828c293dc6ffa.bindTooltip(
+                `<div>
+                     Saphan Taksin (Riverside hub)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb5c30519f04bb71792436a5e7ab96a1 = L.marker(
+                [13.7589, 100.4972],
+                {}
+            ).addTo(feature_group_a97132447b2bf675472ecec6a210e18f);
+        
+    
+        var popup_bd57be80476a33ff7cd25cff52d8449e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab4cbc934bb98543763c08c063b1b76b = $(`<div id="html_ab4cbc934bb98543763c08c063b1b76b" style="width: 100.0%; height: 100.0%;">Khao San Road</div>`)[0];
+            popup_bd57be80476a33ff7cd25cff52d8449e.setContent(html_ab4cbc934bb98543763c08c063b1b76b);
+        
+
+        marker_fb5c30519f04bb71792436a5e7ab96a1.bindPopup(popup_bd57be80476a33ff7cd25cff52d8449e)
+        ;
+
+        
+    
+    
+            marker_fb5c30519f04bb71792436a5e7ab96a1.bindTooltip(
+                `<div>
+                     Khao San Road
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_008db1c1b94d43734d3c7782856e5b43 = L.featureGroup(
+                {}
+            ).addTo(map_59e606cf0ca1ceeb7c441c11e9345489);
+        
+    
+            var poly_line_2d85d6fcd1d269bdecca62087b684de6 = L.polyline(
+                [[13.7189, 100.5169], [13.7267, 100.5105], [13.7439, 100.4885], [13.7469, 100.4935], [13.7503, 100.4912]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_008db1c1b94d43734d3c7782856e5b43);
+        
+    
+            poly_line_2d85d6fcd1d269bdecca62087b684de6.bindTooltip(
+                `<div>
+                     Riverside → Templos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ace6b59d5a71b5a33acab853a2dc92d4 = L.polyline(
+                [[13.7356, 100.5562], [13.7492, 100.5283], [13.7395, 100.51]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_008db1c1b94d43734d3c7782856e5b43);
+        
+    
+            poly_line_ace6b59d5a71b5a33acab853a2dc92d4.bindTooltip(
+                `<div>
+                     Sukhumvit → Cultura
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8ff1c7f6130f6b1543153a9d5cbddb83 = L.polyline(
+                [[13.6923, 100.7507], [13.7356, 100.5562], [13.9126, 100.607]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_008db1c1b94d43734d3c7782856e5b43);
+        
+    
+            poly_line_8ff1c7f6130f6b1543153a9d5cbddb83.bindTooltip(
+                `<div>
+                     Aeropuertos (vía centro)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_334e1bb3686ed23b49dcc0e946e2d661 = L.featureGroup(
+                {}
+            ).addTo(map_59e606cf0ca1ceeb7c441c11e9345489);
+        
+    
+            var marker_bb6c0660bf317b510f40a2b564ffec5c = L.marker(
+                [13.7057, 100.5105],
+                {}
+            ).addTo(feature_group_334e1bb3686ed23b49dcc0e946e2d661);
+        
+    
+            var icon_82d1cb95d98ff91db6d796f0378f6c8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bb6c0660bf317b510f40a2b564ffec5c.setIcon(icon_82d1cb95d98ff91db6d796f0378f6c8a);
+        
+    
+        var popup_708612202d3b5c1e0e6f9b1ee386c8c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db6cdab1a1b6923cb4743e7c44d96703 = $(`<div id="html_db6cdab1a1b6923cb4743e7c44d96703" style="width: 100.0%; height: 100.0%;">Asiatique The Riverfront</div>`)[0];
+            popup_708612202d3b5c1e0e6f9b1ee386c8c6.setContent(html_db6cdab1a1b6923cb4743e7c44d96703);
+        
+
+        marker_bb6c0660bf317b510f40a2b564ffec5c.bindPopup(popup_708612202d3b5c1e0e6f9b1ee386c8c6)
+        ;
+
+        
+    
+    
+            marker_bb6c0660bf317b510f40a2b564ffec5c.bindTooltip(
+                `<div>
+                     Asiatique The Riverfront
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7dba4cbb118625ad07134b8fb710955a = L.marker(
+                [13.7506, 100.565],
+                {}
+            ).addTo(feature_group_334e1bb3686ed23b49dcc0e946e2d661);
+        
+    
+            var icon_2cae6444d23597a567ad8ff84493c53b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7dba4cbb118625ad07134b8fb710955a.setIcon(icon_2cae6444d23597a567ad8ff84493c53b);
+        
+    
+        var popup_634b00dfc6ac737c68a1d86679993925 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6eab7341294b2e7f4dd76dac6135aa30 = $(`<div id="html_6eab7341294b2e7f4dd76dac6135aa30" style="width: 100.0%; height: 100.0%;">Jodd Fairs (Rama 9)</div>`)[0];
+            popup_634b00dfc6ac737c68a1d86679993925.setContent(html_6eab7341294b2e7f4dd76dac6135aa30);
+        
+
+        marker_7dba4cbb118625ad07134b8fb710955a.bindPopup(popup_634b00dfc6ac737c68a1d86679993925)
+        ;
+
+        
+    
+    
+            marker_7dba4cbb118625ad07134b8fb710955a.bindTooltip(
+                `<div>
+                     Jodd Fairs (Rama 9)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03bb73c1c380f390f1913eb617991980 = L.marker(
+                [13.6903, 100.6468],
+                {}
+            ).addTo(feature_group_334e1bb3686ed23b49dcc0e946e2d661);
+        
+    
+            var icon_e142c9735e579d76c9b0976e93492443 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_03bb73c1c380f390f1913eb617991980.setIcon(icon_e142c9735e579d76c9b0976e93492443);
+        
+    
+        var popup_2370cdde69d14f22b76bb84ac729c5b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8189da82c54e0d2eee6cfcedd89fba77 = $(`<div id="html_8189da82c54e0d2eee6cfcedd89fba77" style="width: 100.0%; height: 100.0%;">Talat Rot Fai Srinakarin</div>`)[0];
+            popup_2370cdde69d14f22b76bb84ac729c5b9.setContent(html_8189da82c54e0d2eee6cfcedd89fba77);
+        
+
+        marker_03bb73c1c380f390f1913eb617991980.bindPopup(popup_2370cdde69d14f22b76bb84ac729c5b9)
+        ;
+
+        
+    
+    
+            marker_03bb73c1c380f390f1913eb617991980.bindTooltip(
+                `<div>
+                     Talat Rot Fai Srinakarin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b53c97ec807d31110831a031e2d070b6 = L.marker(
+                [13.7585, 100.4855],
+                {}
+            ).addTo(feature_group_334e1bb3686ed23b49dcc0e946e2d661);
+        
+    
+            var icon_9250b6fdf6b1cd1266ea9205c842571e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b53c97ec807d31110831a031e2d070b6.setIcon(icon_9250b6fdf6b1cd1266ea9205c842571e);
+        
+    
+        var popup_41ef154960369ce2ea09224f4d0c1bf6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e105184fda6e202c5cf8eda56c19b90 = $(`<div id="html_9e105184fda6e202c5cf8eda56c19b90" style="width: 100.0%; height: 100.0%;">Wang Lang Market</div>`)[0];
+            popup_41ef154960369ce2ea09224f4d0c1bf6.setContent(html_9e105184fda6e202c5cf8eda56c19b90);
+        
+
+        marker_b53c97ec807d31110831a031e2d070b6.bindPopup(popup_41ef154960369ce2ea09224f4d0c1bf6)
+        ;
+
+        
+    
+    
+            marker_b53c97ec807d31110831a031e2d070b6.bindTooltip(
+                `<div>
+                     Wang Lang Market
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb07fa6020f6fadde2d7370d58d6226e = L.marker(
+                [13.7429, 100.4976],
+                {}
+            ).addTo(feature_group_334e1bb3686ed23b49dcc0e946e2d661);
+        
+    
+            var icon_2d9fd7f3dac75e752fdfaf27c604b0b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb07fa6020f6fadde2d7370d58d6226e.setIcon(icon_2d9fd7f3dac75e752fdfaf27c604b0b5);
+        
+    
+        var popup_3e7367b2ffe62fa6154346133e4b7fff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5055f885b36ab7ea7b84335d674832a = $(`<div id="html_b5055f885b36ab7ea7b84335d674832a" style="width: 100.0%; height: 100.0%;">Pak Khlong Talat (Mercado de flores)</div>`)[0];
+            popup_3e7367b2ffe62fa6154346133e4b7fff.setContent(html_b5055f885b36ab7ea7b84335d674832a);
+        
+
+        marker_eb07fa6020f6fadde2d7370d58d6226e.bindPopup(popup_3e7367b2ffe62fa6154346133e4b7fff)
+        ;
+
+        
+    
+    
+            marker_eb07fa6020f6fadde2d7370d58d6226e.bindTooltip(
+                `<div>
+                     Pak Khlong Talat (Mercado de flores)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a10a393bd221499331f65f7e5c01851 = L.marker(
+                [13.7267, 100.5105],
+                {}
+            ).addTo(feature_group_334e1bb3686ed23b49dcc0e946e2d661);
+        
+    
+            var icon_519de7c9bb530c3442851d1ee2d4f74b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5a10a393bd221499331f65f7e5c01851.setIcon(icon_519de7c9bb530c3442851d1ee2d4f74b);
+        
+    
+        var popup_fbf08d0905e5e71ce6865b1b674fd968 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5fa069c30b6d8eef815973df5ffc670 = $(`<div id="html_e5fa069c30b6d8eef815973df5ffc670" style="width: 100.0%; height: 100.0%;">ICONSIAM (fuentes)</div>`)[0];
+            popup_fbf08d0905e5e71ce6865b1b674fd968.setContent(html_e5fa069c30b6d8eef815973df5ffc670);
+        
+
+        marker_5a10a393bd221499331f65f7e5c01851.bindPopup(popup_fbf08d0905e5e71ce6865b1b674fd968)
+        ;
+
+        
+    
+    
+            marker_5a10a393bd221499331f65f7e5c01851.bindTooltip(
+                `<div>
+                     ICONSIAM (fuentes)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_787688d74a78565f3a575785b8f14597 = L.marker(
+                [13.7215, 100.5176],
+                {}
+            ).addTo(feature_group_334e1bb3686ed23b49dcc0e946e2d661);
+        
+    
+            var icon_2b35bd09cd6f2f715ce0dd2555dc1776 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_787688d74a78565f3a575785b8f14597.setIcon(icon_2b35bd09cd6f2f715ce0dd2555dc1776);
+        
+    
+        var popup_9c3b0d14ce1c97c922dfd20ce828d4b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb13aca5fab281a192959c749305adcf = $(`<div id="html_fb13aca5fab281a192959c749305adcf" style="width: 100.0%; height: 100.0%;">Sky Bar @ Lebua</div>`)[0];
+            popup_9c3b0d14ce1c97c922dfd20ce828d4b2.setContent(html_fb13aca5fab281a192959c749305adcf);
+        
+
+        marker_787688d74a78565f3a575785b8f14597.bindPopup(popup_9c3b0d14ce1c97c922dfd20ce828d4b2)
+        ;
+
+        
+    
+    
+            marker_787688d74a78565f3a575785b8f14597.bindTooltip(
+                `<div>
+                     Sky Bar @ Lebua
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0749b9d28a57356fa4fd6eb5dc7249ad = L.marker(
+                [13.7233, 100.5436],
+                {}
+            ).addTo(feature_group_334e1bb3686ed23b49dcc0e946e2d661);
+        
+    
+            var icon_133d205e4e10adcb05e96fceae8d16a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0749b9d28a57356fa4fd6eb5dc7249ad.setIcon(icon_133d205e4e10adcb05e96fceae8d16a1);
+        
+    
+        var popup_40bdca6547b497c2ecd533f81b94dbf3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_973dce06fde7c6c541805bef2547ee38 = $(`<div id="html_973dce06fde7c6c541805bef2547ee38" style="width: 100.0%; height: 100.0%;">Moon Bar @ Banyan Tree</div>`)[0];
+            popup_40bdca6547b497c2ecd533f81b94dbf3.setContent(html_973dce06fde7c6c541805bef2547ee38);
+        
+
+        marker_0749b9d28a57356fa4fd6eb5dc7249ad.bindPopup(popup_40bdca6547b497c2ecd533f81b94dbf3)
+        ;
+
+        
+    
+    
+            marker_0749b9d28a57356fa4fd6eb5dc7249ad.bindTooltip(
+                `<div>
+                     Moon Bar @ Banyan Tree
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24a78046b5ab5ca7ceba5802d62964c4 = L.marker(
+                [13.7247, 100.5794],
+                {}
+            ).addTo(feature_group_334e1bb3686ed23b49dcc0e946e2d661);
+        
+    
+            var icon_004a0bc25da53d102a3a537be3bdd423 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_24a78046b5ab5ca7ceba5802d62964c4.setIcon(icon_004a0bc25da53d102a3a537be3bdd423);
+        
+    
+        var popup_f2898454ce1fc23c070c268362f5ba88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3b1e9be1211d01018abfb7b1051eb67 = $(`<div id="html_a3b1e9be1211d01018abfb7b1051eb67" style="width: 100.0%; height: 100.0%;">Octave Rooftop @ Sukhumvit 57</div>`)[0];
+            popup_f2898454ce1fc23c070c268362f5ba88.setContent(html_a3b1e9be1211d01018abfb7b1051eb67);
+        
+
+        marker_24a78046b5ab5ca7ceba5802d62964c4.bindPopup(popup_f2898454ce1fc23c070c268362f5ba88)
+        ;
+
+        
+    
+    
+            marker_24a78046b5ab5ca7ceba5802d62964c4.bindTooltip(
+                `<div>
+                     Octave Rooftop @ Sukhumvit 57
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03bb1d31665a96861b2e3ac4a294053f = L.marker(
+                [13.7416, 100.5552],
+                {}
+            ).addTo(feature_group_334e1bb3686ed23b49dcc0e946e2d661);
+        
+    
+            var icon_3828167cbc68a09ecc4628ca5b3ae38e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_03bb1d31665a96861b2e3ac4a294053f.setIcon(icon_3828167cbc68a09ecc4628ca5b3ae38e);
+        
+    
+        var popup_307619b412171cf7af04a536d870f4dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01ceccd6f11002ccc7dfdc389598998f = $(`<div id="html_01ceccd6f11002ccc7dfdc389598998f" style="width: 100.0%; height: 100.0%;">Above Eleven @ Sukhumvit 11</div>`)[0];
+            popup_307619b412171cf7af04a536d870f4dd.setContent(html_01ceccd6f11002ccc7dfdc389598998f);
+        
+
+        marker_03bb1d31665a96861b2e3ac4a294053f.bindPopup(popup_307619b412171cf7af04a536d870f4dd)
+        ;
+
+        
+    
+    
+            marker_03bb1d31665a96861b2e3ac4a294053f.bindTooltip(
+                `<div>
+                     Above Eleven @ Sukhumvit 11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bfc39045e7d713cac1f439d47f4a0593 = L.marker(
+                [13.7239, 100.5296],
+                {}
+            ).addTo(feature_group_334e1bb3686ed23b49dcc0e946e2d661);
+        
+    
+            var icon_761cdadf457229d6c94acc461d6d9090 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bfc39045e7d713cac1f439d47f4a0593.setIcon(icon_761cdadf457229d6c94acc461d6d9090);
+        
+    
+        var popup_ac0d4a655cc2779c39e12be2e8e31d78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_320df1f34c9eb5fda70653efd3a575f4 = $(`<div id="html_320df1f34c9eb5fda70653efd3a575f4" style="width: 100.0%; height: 100.0%;">Mahanakhon SkyWalk</div>`)[0];
+            popup_ac0d4a655cc2779c39e12be2e8e31d78.setContent(html_320df1f34c9eb5fda70653efd3a575f4);
+        
+
+        marker_bfc39045e7d713cac1f439d47f4a0593.bindPopup(popup_ac0d4a655cc2779c39e12be2e8e31d78)
+        ;
+
+        
+    
+    
+            marker_bfc39045e7d713cac1f439d47f4a0593.bindTooltip(
+                `<div>
+                     Mahanakhon SkyWalk
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2aea7c97d0b54744782f42541aec6b46 = L.marker(
+                [13.7597, 100.497],
+                {}
+            ).addTo(feature_group_334e1bb3686ed23b49dcc0e946e2d661);
+        
+    
+            var icon_31fd1970d5982dd58d51ce1870c1953a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2aea7c97d0b54744782f42541aec6b46.setIcon(icon_31fd1970d5982dd58d51ce1870c1953a);
+        
+    
+        var popup_29680374d4d1c7fcf5666aa3e8630121 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25773ebe29502dcccf076962fa8c5eef = $(`<div id="html_25773ebe29502dcccf076962fa8c5eef" style="width: 100.0%; height: 100.0%;">Khao San Road</div>`)[0];
+            popup_29680374d4d1c7fcf5666aa3e8630121.setContent(html_25773ebe29502dcccf076962fa8c5eef);
+        
+
+        marker_2aea7c97d0b54744782f42541aec6b46.bindPopup(popup_29680374d4d1c7fcf5666aa3e8630121)
+        ;
+
+        
+    
+    
+            marker_2aea7c97d0b54744782f42541aec6b46.bindTooltip(
+                `<div>
+                     Khao San Road
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ff22b49879df5f9e366fbcd6fd4a458 = L.marker(
+                [13.7365, 100.5609],
+                {}
+            ).addTo(feature_group_334e1bb3686ed23b49dcc0e946e2d661);
+        
+    
+            var icon_ff9bce6c4121b0ec5f35e99ec559f133 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9ff22b49879df5f9e366fbcd6fd4a458.setIcon(icon_ff9bce6c4121b0ec5f35e99ec559f133);
+        
+    
+        var popup_54d8373220197911e48d874a7743cb75 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8941b1056f8a946e2aa577e4a00b7802 = $(`<div id="html_8941b1056f8a946e2aa577e4a00b7802" style="width: 100.0%; height: 100.0%;">Soi Cowboy</div>`)[0];
+            popup_54d8373220197911e48d874a7743cb75.setContent(html_8941b1056f8a946e2aa577e4a00b7802);
+        
+
+        marker_9ff22b49879df5f9e366fbcd6fd4a458.bindPopup(popup_54d8373220197911e48d874a7743cb75)
+        ;
+
+        
+    
+    
+            marker_9ff22b49879df5f9e366fbcd6fd4a458.bindTooltip(
+                `<div>
+                     Soi Cowboy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_179b64d21d3985f25945fb84b344d429 = L.marker(
+                [13.741, 100.5556],
+                {}
+            ).addTo(feature_group_334e1bb3686ed23b49dcc0e946e2d661);
+        
+    
+            var icon_b5fb44e4e153f96f6e4fcd3a31ddd656 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_179b64d21d3985f25945fb84b344d429.setIcon(icon_b5fb44e4e153f96f6e4fcd3a31ddd656);
+        
+    
+        var popup_0c5b8c18e421128d490462cf99941fda = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eae0e91498a3ca13dfce051eb492ca60 = $(`<div id="html_eae0e91498a3ca13dfce051eb492ca60" style="width: 100.0%; height: 100.0%;">Nana Plaza</div>`)[0];
+            popup_0c5b8c18e421128d490462cf99941fda.setContent(html_eae0e91498a3ca13dfce051eb492ca60);
+        
+
+        marker_179b64d21d3985f25945fb84b344d429.bindPopup(popup_0c5b8c18e421128d490462cf99941fda)
+        ;
+
+        
+    
+    
+            marker_179b64d21d3985f25945fb84b344d429.bindTooltip(
+                `<div>
+                     Nana Plaza
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bdfeaf22e50d56c41e1483f16bdf819 = L.marker(
+                [13.7245, 100.579],
+                {}
+            ).addTo(feature_group_334e1bb3686ed23b49dcc0e946e2d661);
+        
+    
+            var icon_54e6af335b297f7195ce76f168e2ee0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6bdfeaf22e50d56c41e1483f16bdf819.setIcon(icon_54e6af335b297f7195ce76f168e2ee0d);
+        
+    
+        var popup_b92a09839e1e7d94ed9aac56175704d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9eccc4450653cc3ff7babee7cb9191f = $(`<div id="html_c9eccc4450653cc3ff7babee7cb9191f" style="width: 100.0%; height: 100.0%;">Thonglor (Soi 55)</div>`)[0];
+            popup_b92a09839e1e7d94ed9aac56175704d6.setContent(html_c9eccc4450653cc3ff7babee7cb9191f);
+        
+
+        marker_6bdfeaf22e50d56c41e1483f16bdf819.bindPopup(popup_b92a09839e1e7d94ed9aac56175704d6)
+        ;
+
+        
+    
+    
+            marker_6bdfeaf22e50d56c41e1483f16bdf819.bindTooltip(
+                `<div>
+                     Thonglor (Soi 55)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c6b7eddba81c466012f18bbee72ee927 = L.marker(
+                [13.7189, 100.586],
+                {}
+            ).addTo(feature_group_334e1bb3686ed23b49dcc0e946e2d661);
+        
+    
+            var icon_698b2b6918c6ab03e8d11c69f75d3826 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c6b7eddba81c466012f18bbee72ee927.setIcon(icon_698b2b6918c6ab03e8d11c69f75d3826);
+        
+    
+        var popup_0c3df9b0bc4466afd6fa09b9cde066e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53ebcaaf0d0d65c8bbd2578d3a6a2e15 = $(`<div id="html_53ebcaaf0d0d65c8bbd2578d3a6a2e15" style="width: 100.0%; height: 100.0%;">Ekkamai (Soi 63)</div>`)[0];
+            popup_0c3df9b0bc4466afd6fa09b9cde066e0.setContent(html_53ebcaaf0d0d65c8bbd2578d3a6a2e15);
+        
+
+        marker_c6b7eddba81c466012f18bbee72ee927.bindPopup(popup_0c3df9b0bc4466afd6fa09b9cde066e0)
+        ;
+
+        
+    
+    
+            marker_c6b7eddba81c466012f18bbee72ee927.bindTooltip(
+                `<div>
+                     Ekkamai (Soi 63)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_06e1bc5f89abef4365acc0f52eed3163 = L.featureGroup(
+                {}
+            ).addTo(map_59e606cf0ca1ceeb7c441c11e9345489);
+        
+    
+            var circle_marker_a847f8564bb8943d06abafc4bb407680 = L.circleMarker(
+                [13.7189, 100.5169],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_06e1bc5f89abef4365acc0f52eed3163);
+        
+    
+        var popup_59fa394be378876c896355c20010f020 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f9c431ae843ddac36b46cac1dc972d1 = $(`<div id="html_6f9c431ae843ddac36b46cac1dc972d1" style="width: 100.0%; height: 100.0%;">Riverside / Saphan Taksin</div>`)[0];
+            popup_59fa394be378876c896355c20010f020.setContent(html_6f9c431ae843ddac36b46cac1dc972d1);
+        
+
+        circle_marker_a847f8564bb8943d06abafc4bb407680.bindPopup(popup_59fa394be378876c896355c20010f020)
+        ;
+
+        
+    
+    
+            circle_marker_a847f8564bb8943d06abafc4bb407680.bindTooltip(
+                `<div>
+                     Riverside / Saphan Taksin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3c23aba66b8fd3e90db21fcdd511ce18 = L.circleMarker(
+                [13.7356, 100.5562],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_06e1bc5f89abef4365acc0f52eed3163);
+        
+    
+        var popup_cfb13b079b94b047f53f39ac721abbd5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb4c7515c217224ff2ef5f9521016d89 = $(`<div id="html_bb4c7515c217224ff2ef5f9521016d89" style="width: 100.0%; height: 100.0%;">Sukhumvit (Asok–Phrom Phong)</div>`)[0];
+            popup_cfb13b079b94b047f53f39ac721abbd5.setContent(html_bb4c7515c217224ff2ef5f9521016d89);
+        
+
+        circle_marker_3c23aba66b8fd3e90db21fcdd511ce18.bindPopup(popup_cfb13b079b94b047f53f39ac721abbd5)
+        ;
+
+        
+    
+    
+            circle_marker_3c23aba66b8fd3e90db21fcdd511ce18.bindTooltip(
+                `<div>
+                     Sukhumvit (Asok–Phrom Phong)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b4a989105f03ae773f8d39549bb3e15d = L.circleMarker(
+                [13.7395, 100.51],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_06e1bc5f89abef4365acc0f52eed3163);
+        
+    
+        var popup_e2ecb00d18e48289162e5cf831428d5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6e130500064dd7bfe74a163f6f30ae6 = $(`<div id="html_c6e130500064dd7bfe74a163f6f30ae6" style="width: 100.0%; height: 100.0%;">Chinatown (Yaowarat)</div>`)[0];
+            popup_e2ecb00d18e48289162e5cf831428d5b.setContent(html_c6e130500064dd7bfe74a163f6f30ae6);
+        
+
+        circle_marker_b4a989105f03ae773f8d39549bb3e15d.bindPopup(popup_e2ecb00d18e48289162e5cf831428d5b)
+        ;
+
+        
+    
+    
+            circle_marker_b4a989105f03ae773f8d39549bb3e15d.bindTooltip(
+                `<div>
+                     Chinatown (Yaowarat)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b097c0de08d81e94c11512815a39abcc = L.circleMarker(
+                [13.7589, 100.4972],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_06e1bc5f89abef4365acc0f52eed3163);
+        
+    
+        var popup_e26a1d3ae62c59071703caf0c81aba34 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cdb01560372131a5e304a65fc29199d8 = $(`<div id="html_cdb01560372131a5e304a65fc29199d8" style="width: 100.0%; height: 100.0%;">Old City (Khao San / Rattanakosin)</div>`)[0];
+            popup_e26a1d3ae62c59071703caf0c81aba34.setContent(html_cdb01560372131a5e304a65fc29199d8);
+        
+
+        circle_marker_b097c0de08d81e94c11512815a39abcc.bindPopup(popup_e26a1d3ae62c59071703caf0c81aba34)
+        ;
+
+        
+    
+    
+            circle_marker_b097c0de08d81e94c11512815a39abcc.bindTooltip(
+                `<div>
+                     Old City (Khao San / Rattanakosin)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_96a5650e4a00e35db9951ed4a2127700 = L.featureGroup(
+                {}
+            ).addTo(map_59e606cf0ca1ceeb7c441c11e9345489);
+        
+    
+            var marker_7a9776d33f9ef83eeabfb190ca246d60 = L.marker(
+                [13.7476, 100.5846],
+                {}
+            ).addTo(feature_group_96a5650e4a00e35db9951ed4a2127700);
+        
+    
+            var icon_ad15ce0615089353f3e8beab9f0e2b4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_7a9776d33f9ef83eeabfb190ca246d60.setIcon(icon_ad15ce0615089353f3e8beab9f0e2b4d);
+        
+    
+        var popup_314df03ed7c7734270bdc468925ee0b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bd106fea7b6f0b74c2dc83d81e7062c = $(`<div id="html_1bd106fea7b6f0b74c2dc83d81e7062c" style="width: 100.0%; height: 100.0%;">Cassia Rama 9 Bangkok</div>`)[0];
+            popup_314df03ed7c7734270bdc468925ee0b4.setContent(html_1bd106fea7b6f0b74c2dc83d81e7062c);
+        
+
+        marker_7a9776d33f9ef83eeabfb190ca246d60.bindPopup(popup_314df03ed7c7734270bdc468925ee0b4)
+        ;
+
+        
+    
+    
+            marker_7a9776d33f9ef83eeabfb190ca246d60.bindTooltip(
+                `<div>
+                     Cassia Rama 9 Bangkok
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f2062e890f8146508054d805df99afa = L.marker(
+                [13.7596, 100.497],
+                {}
+            ).addTo(feature_group_96a5650e4a00e35db9951ed4a2127700);
+        
+    
+            var icon_a353c812b4379aaa9e3b92f4f6d95b18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_0f2062e890f8146508054d805df99afa.setIcon(icon_a353c812b4379aaa9e3b92f4f6d95b18);
+        
+    
+        var popup_f9502b656b9480437bc8670b1993cef7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8c02cd25eda6abbd65e0927b710a189 = $(`<div id="html_d8c02cd25eda6abbd65e0927b710a189" style="width: 100.0%; height: 100.0%;">MANGO Lagoon Place</div>`)[0];
+            popup_f9502b656b9480437bc8670b1993cef7.setContent(html_d8c02cd25eda6abbd65e0927b710a189);
+        
+
+        marker_0f2062e890f8146508054d805df99afa.bindPopup(popup_f9502b656b9480437bc8670b1993cef7)
+        ;
+
+        
+    
+    
+            marker_0f2062e890f8146508054d805df99afa.bindTooltip(
+                `<div>
+                     MANGO Lagoon Place
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_97286a463f4e951cd96c2ba8e6c73fd4 = L.featureGroup(
+                {}
+            ).addTo(map_59e606cf0ca1ceeb7c441c11e9345489);
+        
+    
+            var poly_line_ff20549c7b6b0580b1e628b9c7a39335 = L.polyline(
+                [[13.6923, 100.7507], [13.7563, 100.5334]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_97286a463f4e951cd96c2ba8e6c73fd4);
+        
+    
+            poly_line_ff20549c7b6b0580b1e628b9c7a39335.bindTooltip(
+                `<div>
+                     Airport Rail Link
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ae9a108a91e32e7e72d243d530ec2af1 = L.polyline(
+                [[13.746, 100.534], [13.7189, 100.5169]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_97286a463f4e951cd96c2ba8e6c73fd4);
+        
+    
+            poly_line_ae9a108a91e32e7e72d243d530ec2af1.bindTooltip(
+                `<div>
+                     BTS Silom Line
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ae9c53057ea5c4335ae9b341e381f729 = L.polyline(
+                [[13.746, 100.534], [13.7366, 100.56]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_97286a463f4e951cd96c2ba8e6c73fd4);
+        
+    
+            poly_line_ae9c53057ea5c4335ae9b341e381f729.bindTooltip(
+                `<div>
+                     BTS Sukhumvit Line
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1ff34f994edf18572331556a4443efdd = L.polyline(
+                [[13.7407, 100.5105], [13.7446, 100.4927]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_97286a463f4e951cd96c2ba8e6c73fd4);
+        
+    
+            poly_line_1ff34f994edf18572331556a4443efdd.bindTooltip(
+                `<div>
+                     MRT Blue Line
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3c0c36d59bb04cb7907af4e1c0d9d035 = L.polyline(
+                [[13.8022, 100.537], [13.9126, 100.607]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_97286a463f4e951cd96c2ba8e6c73fd4);
+        
+    
+            poly_line_3c0c36d59bb04cb7907af4e1c0d9d035.bindTooltip(
+                `<div>
+                     SRT Red Line
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_04e8807091f2788881ac6854e9536431 = L.circleMarker(
+                [13.6923, 100.7507],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_97286a463f4e951cd96c2ba8e6c73fd4);
+        
+    
+            circle_marker_04e8807091f2788881ac6854e9536431.bindTooltip(
+                `<div>
+                     Suvarnabhumi (BKK)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_08e284fd8904290662887703ea2852e9 = L.circleMarker(
+                [13.7563, 100.5334],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_97286a463f4e951cd96c2ba8e6c73fd4);
+        
+    
+            circle_marker_08e284fd8904290662887703ea2852e9.bindTooltip(
+                `<div>
+                     Phaya Thai (ARL ↔ BTS)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2e83891b3d2b7fab0f4b813dc0e4e2c4 = L.circleMarker(
+                [13.7366, 100.56],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_97286a463f4e951cd96c2ba8e6c73fd4);
+        
+    
+            circle_marker_2e83891b3d2b7fab0f4b813dc0e4e2c4.bindTooltip(
+                `<div>
+                     Asok (BTS) / Sukhumvit (MRT)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2414a242fab1d22684248185f9d58469 = L.circleMarker(
+                [13.746, 100.534],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_97286a463f4e951cd96c2ba8e6c73fd4);
+        
+    
+            circle_marker_2414a242fab1d22684248185f9d58469.bindTooltip(
+                `<div>
+                     Siam (BTS)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2ba7080b0be085957690a90b1d87f504 = L.circleMarker(
+                [13.7189, 100.5169],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_97286a463f4e951cd96c2ba8e6c73fd4);
+        
+    
+            circle_marker_2ba7080b0be085957690a90b1d87f504.bindTooltip(
+                `<div>
+                     Saphan Taksin (BTS)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1e62dc7d33a11810b2780092564af2e4 = L.circleMarker(
+                [13.7446, 100.4927],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_97286a463f4e951cd96c2ba8e6c73fd4);
+        
+    
+            circle_marker_1e62dc7d33a11810b2780092564af2e4.bindTooltip(
+                `<div>
+                     Sanam Chai (MRT)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_83d49b189825f8c45a6d17dbcbe8ed5f = L.circleMarker(
+                [13.7407, 100.5105],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_97286a463f4e951cd96c2ba8e6c73fd4);
+        
+    
+            circle_marker_83d49b189825f8c45a6d17dbcbe8ed5f.bindTooltip(
+                `<div>
+                     Wat Mangkon (MRT)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_afb153041938895380706ee4c0f911cb = L.circleMarker(
+                [13.8022, 100.537],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_97286a463f4e951cd96c2ba8e6c73fd4);
+        
+    
+            circle_marker_afb153041938895380706ee4c0f911cb.bindTooltip(
+                `<div>
+                     Bang Sue (MRT + SRT)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_447a437752903ad41fc0f2723a091b30 = L.circleMarker(
+                [13.9126, 100.607],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_97286a463f4e951cd96c2ba8e6c73fd4);
+        
+    
+            circle_marker_447a437752903ad41fc0f2723a091b30.bindTooltip(
+                `<div>
+                     Don Mueang (DMK)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_bad8bc7802831d20f1c75477e3616391 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_3a0892917afee9a3a1b08cff1224bf3e,
+                },
+                overlays :  {
+                    "Puntos clave" : feature_group_a97132447b2bf675472ecec6a210e18f,
+                    "Rutas sugeridas" : feature_group_008db1c1b94d43734d3c7782856e5b43,
+                    "Vida nocturna y mercados" : feature_group_334e1bb3686ed23b49dcc0e946e2d661,
+                    "Zonas de alojamiento" : feature_group_06e1bc5f89abef4365acc0f52eed3163,
+                    "Tus hoteles" : feature_group_96a5650e4a00e35db9951ed4a2127700,
+                    "Transporte (BTS/MRT/ARL/SRT)" : feature_group_97286a463f4e951cd96c2ba8e6c73fd4,
+                },
+            };
+            L.control.layers(
+                layer_control_bad8bc7802831d20f1c75477e3616391.base_layers,
+                layer_control_bad8bc7802831d20f1c75477e3616391.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_59e606cf0ca1ceeb7c441c11e9345489);
+            feature_group_334e1bb3686ed23b49dcc0e946e2d661.remove();
+            feature_group_97286a463f4e951cd96c2ba8e6c73fd4.remove();
+        
+</script>
+</html>
